@@ -3,165 +3,209 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="Tao Su, math, mathematics, home page">
-	<meta name="author" content="Tao Su">
+  <meta name="author" content="Tao Su">
   <title>Tao Su</title>
+
+  <!-- Ownership verification -->
+  <meta name="google-site-verification" content="C_RZHg6RMQTsm4iILXWm1OGlU2CJbjeWiNUutUUOTAM" />
+
   <link rel="stylesheet" href="css/stylesheet.css">
-  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  <link href="https://fonts.googleapis.com/css?family=Neuton:400,400i,700,700i" rel="stylesheet">
+
+  <!-- MathJax v3 (only needed if this page contains math) -->
+  <script>
+    MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+    };
   </script>
-  <link href='https://fonts.googleapis.com/css?family=Neuton:400,400i,700,700i' rel='stylesheet'>
- <!-- <link rel="icon" href="https://static.ist.ac.at/ist/images/favicon.ico" /> -->
-	
-	<!-- navigation style -->
-<style>
-	*
-	{
-		padding:0;
-		margin:0;
-	}
-	
-	nav
-	{
-		background-color:black;
-		height:50px;
-	}
-	nav ul
-	{
-		<!--border:1px solid red;-->
-		height:50px;
-		width:1200px;
-		margin:0 auto;
-	}
-	nav ul li
-	{
-		list-style-type:none;
-		width:200px;
-		float:left;
-		text-align:center;
-	}
-	nav ul li a
-	{
-		text-decoration:none;
-		color:white;
-		line-height:50px;
-		display:block;
-	}
-	nav ul li a:hover
-	{
-		background-color:white;
-		color:blue;
-	}
-	
-	p
-	{
-		margin:10px;
-	}
-	
-	</style>
-	
-	
-		
-	<!--Ownership verification-->
-	<meta name="google-site-verification" content="C_RZHg6RMQTsm4iILXWm1OGlU2CJbjeWiNUutUUOTAM" />
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: #dddddd;   /* classic light gray */
+      color: #000000;
+    }
+
+    nav {
+      background-color: #1b2a41;                 /* deep academic navy */
+      height: 50px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    }
+
+    nav ul {
+      height: 50px;
+      width: 1200px;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    nav ul li {
+      list-style-type: none;
+      width: 200px;
+      float: left;
+      text-align: center;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #f2f2f2;            /* softened white */
+      line-height: 50px;
+      display: block;
+      transition: background-color 0.15s ease, color 0.15s ease;
+    }
+
+    /* Hover: clearly lighter navy */
+    nav ul li a:hover {
+      background-color: #3d5578;
+      color: #ffffff;
+    }
+
+    /* Active (current page): unmistakable white + bold */
+    nav ul li a.active {
+      background-color: #ffffff;
+      color: #1b2a41;
+      font-weight: bold;
+    }
+
+    /* Brand link (was an <h3> inside <li>) */
+    nav ul li a.brand {
+      font-weight: bold;
+      font-size: 1.17em;
+    }
+
+    /* White "card" content area on top of the gray page */
+    main {
+      width: 95%;
+      max-width: 1200px;      /* wider, for long email lines and CV links */
+      margin: 2em auto;
+      padding: 1.5em 2em;
+      background-color: #ffffff;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    }
+
+    .indent {
+      padding-left: 10px;
+    }
+
+    /* Home page layout: photo + intro side by side */
+    .intro {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 1.5em;
+      margin-bottom: 1em;
+    }
+
+    .intro img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .intro > div {
+      flex: 1 1 320px;
+      min-width: 260px;
+    }
+
+    h2, h3, h4 {
+      margin-top: 1em;
+      margin-bottom: 0.4em;
+    }
+
+    p {
+      line-height: 1.55;
+      margin: 0.8em 0;
+    }
+  </style>
 </head>
-	
-	
-	
-	
 
 <body>
-	
-<nav>
-      <ul>
-	      <li><h3><a href="./" class="active"> Su, Tao  苏桃 </a></h3></li>
-	      
-	      
-	     <!-- <li><a href="home">Home </a></li> -->
-	      
-              <li><a href="research">Research </a></li>
-	      
-	      <!--    <li><a href="notes">Notes </a></li>   -->
-	
-	      <li><a href="teaching">Teaching </a></li>
-       
-	      <li><a href="seminar">Seminar </a></li>
-      </ul>
-</nav>
-	
-	
-	
-  <div class="intro">
-    <p><img src="../docs/assets/img/Tao-Su.jpg" width="400" alt="Tao Su" id="mypicture" /></p>
-    <div>
-	  
-       <!--<p><strong>Office: </strong> 710, Academic Building #1,
-	      <br/>
-        <a href="http://www.ims.cuhk.edu.hk/">Institute of Mathematical Sciences, The Chinese University of Hong Kong</a><br/>
-        China</p> -->
-	    
-      <p><strong>Email:</strong><code class="highlighter-rouge"> 
-	      &#115;&#117;&#116;&#097;&#111;&#48;&#56;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#99;&#111;&#109; </code> or 
-      :</strong><code class="highlighter-rouge">  &#115;&#117;&#116;&#097;&#111;&#064;&#98;&#105;&#109;&#115;&#097;&#046;&#99;&#110;</code></p>
-      <!-- http://wbwip.com/wbw/emailencoder.html -->
-      <!--<p><strong>Office:</strong> <a href=""></a> 605<br /></p>
-      <p><strong>Phone:</strong></p>-->
+
+  <nav>
+    <ul>
+      <li><a href="./" class="brand active">Su, Tao  苏桃</a></li>
+
+      <!-- <li><a href="home">Home</a></li> -->
+
+      <li><a href="research">Research</a></li>
+
+      <!-- <li><a href="notes">Notes</a></li> -->
+
+      <li><a href="teaching">Teaching</a></li>
+
+      <li><a href="seminar">Seminar</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <div class="intro">
+      <img src="../docs/assets/img/Tao-Su.jpg" width="400" alt="Tao Su" id="mypicture" />
+
+      <div>
+        <!--
+        <p><strong>Office:</strong> 710, Academic Building #1,<br>
+          <a href="http://www.ims.cuhk.edu.hk/">Institute of Mathematical Sciences, The Chinese University of Hong Kong</a><br>
+          China</p>
+        -->
+
+        <p>
+          <strong>Email:</strong>
+          <code class="highlighter-rouge">&#115;&#117;&#116;&#097;&#111;&#048;&#056;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</code>
+          or
+          <code class="highlighter-rouge">&#115;&#117;&#116;&#097;&#111;&#064;&#098;&#105;&#109;&#115;&#097;&#046;&#099;&#110;</code>
+        </p>
+        <!-- http://wbwip.com/wbw/emailencoder.html -->
+
+        <!--
+        <p><strong>Office:</strong> <a href=""></a> 605</p>
+        <p><strong>Phone:</strong></p>
+        -->
+      </div>
     </div>
-  </div>
-  <p><h2 id="About-me"> About me</h2></p>
-	<p> As of the year 2024, I'm an assistant professor at <a href="https://www.bimsa.cn/">BIMSA</a>. </p>
-		
-<!--<p>I'm currently visiting Academy of Mathematics and Systems Science, CAS. Of late, I have been seeking a tenure-track position. </p>-->
-	
-	
-	<p> I obtained my math PhD at <a href="https://math.berkeley.edu/">UC Berkeley</a>
-	  in 2018, advised by <a href="https://sites.google.com/view/vivek-shende/">Vivek Shende</a>
-		and <a href="https://math.berkeley.edu/people/faculty/richard-e-borcherds">Richard E.Borcherds</a>. </p>
-	
-	<p>My research interests include microlocal sheaf theory and Legendrian knots, Hodge theory of character varieties and P=W, and mirror symmetry.</p>
-	
-	<p>My CV is available <a href="../docs/assets/Tao-Su_CV.pdf">here</a>.</p>
-	
-	<!--<p><strong>I'm currently hunting for a tenure-track position.</strong></p>-->
 
+    <h2 id="About-me" class="indent">About me</h2>
 
-	
+    <p>As of the year 2024, I'm an assistant professor at <a href="https://www.bimsa.cn/">BIMSA</a>.</p>
 
-  <!---Google Analytics-->
+    <!--
+    <p>I'm currently visiting Academy of Mathematics and Systems Science, CAS. Of late, I have been seeking a tenure-track position.</p>
+    -->
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <p>I obtained my math PhD at <a href="https://math.berkeley.edu/">UC Berkeley</a>
+      in 2018, advised by <a href="https://sites.google.com/view/vivek-shende/">Vivek Shende</a>
+      and <a href="https://math.berkeley.edu/people/faculty/richard-e-borcherds">Richard E. Borcherds</a>.</p>
+
+    <p>My research interests include microlocal sheaf theory and Legendrian knots, Hodge theory of character varieties and P=W, and mirror symmetry.</p>
+
+    <p>My CV is available <a href="../docs/assets/Tao-Su_CV.pdf">here</a>.</p>
+
+    <!--
+    <p><strong>I'm currently hunting for a tenure-track position.</strong></p>
+    -->
+
+  </main>
+
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92083892-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'UA-92083892-1');
   </script>
 
 </body>
 
 </html>
-	
-	
-  
 
 
-	
 
-  <!---Google Analytics-->
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92083892-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-92083892-1');
-  </script>
-
-</body>
-
-</html>
 
